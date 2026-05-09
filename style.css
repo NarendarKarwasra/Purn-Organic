@@ -562,6 +562,9 @@ html {
     color: var(--primary-color);
     background: transparent;
 }
+.download-btn i {
+    font-size: 22px;
+}
 
 .download-btn::after {
     display: none;
