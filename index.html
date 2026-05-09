@@ -29,7 +29,7 @@
 
         <!-- Download App Button -->
         <div class="button-container app-container" onclick="downloadApp()">
-            <i class="bi bi-cloud-arrow-down-fill"></i>
+            <i class="bi bi-cloud-arrow-down-fill icon"></i>
             <span class="label app-label">Download App</span>
         </div>
 
@@ -70,7 +70,7 @@
                     <nav class="navmenu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="about.html">About</a></li>
                             <li><a href="#">Solutions</a></li>
                             <li><a href="#">Opportunities</a></li>
                             <li><a href="#">Events</a></li>
@@ -123,11 +123,8 @@
                             <span class="hero-tag">Healthy</span>
                         </div>
                         <div class="hero-btn-container">
-                            <button class="shop-btn btn">Shop Now
+                            <button class="shop-btn btn" onclick="scrollToProducts()">Shop Now
                                 <i class="bi bi-cart4"></i>
-                            </button>
-                            <button class="download-btn btn">Download App
-                                <i class="bi bi-cloud-arrow-down-fill"></i>
                             </button>
                         </div>
                     </div>
@@ -148,11 +145,8 @@
                             <span class="hero-tag">Healthy</span>
                         </div>
                         <div class="hero-btn-container">
-                            <button class="shop-btn btn">Shop Now
+                            <button class="shop-btn btn" onclick="scrollToProducts()">Shop Now
                                 <i class="bi bi-cart4"></i>
-                            </button>
-                            <button class="download-btn btn">Download App
-                                <i class="bi bi-cloud-arrow-down-fill"></i>
                             </button>
                         </div>
                     </div>
@@ -173,11 +167,8 @@
                             <span class="hero-tag">Healthy</span>
                         </div>
                         <div class="hero-btn-container">
-                            <button class="shop-btn btn">Shop Now
+                            <button class="shop-btn btn" onclick="scrollToProducts()">Shop Now
                                 <i class="bi bi-cart4"></i>
-                            </button>
-                            <button class="download-btn btn">Download App
-                                <i class="bi bi-cloud-arrow-down-fill"></i>
                             </button>
                         </div>
                     </div>
@@ -198,11 +189,8 @@
                             <span class="hero-tag">Healthy</span>
                         </div>
                         <div class="hero-btn-container">
-                            <button class="shop-btn btn">Shop Now
+                            <button class="shop-btn btn" onclick="scrollToProducts()">Shop Now
                                 <i class="bi bi-cart4"></i>
-                            </button>
-                            <button class="download-btn btn">Download App
-                                <i class="bi bi-cloud-arrow-down-fill"></i>
                             </button>
                         </div>
                     </div>
@@ -223,41 +211,696 @@
                             <span class="hero-tag">Healthy</span>
                         </div>
                         <div class="hero-btn-container">
-                            <button class="shop-btn btn">Shop Now
+                            <button class="shop-btn btn" onclick="scrollToProducts()">Shop Now
                                 <i class="bi bi-cart4"></i>
-                            </button>
-                            <button class="download-btn btn">Download App
-                                <i class="bi bi-cloud-arrow-down-fill"></i>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
+
+    <section class="strengths-section">
+        <div class="section-container">
+            <div class="header-content">
+                <h2>Our Strengths</h2>
+                <p>Discover what makes us different and why we're the best choice for your organic needs.</p>
+            </div>
+            <div class="strengths-grid">
+
+                <div class="strength-card">
+                    <div class="strength-icon">
+                        <img src="images/st-1.png" alt="Farm">
+                    </div>
+                    <h3>Ethically Sourced</h3>
+                    <p>Straight from sustainable local farms to your doorstep.</p>
+                </div>
+
+                <div class="strength-card">
+                    <div class="strength-icon">
+                        <img src="images/st-2.png" alt="Trust">
+                    </div>
+                    <h3>Pure Integrity</h3>
+                    <p>Transparent processes you can trust, every single time.</p>
+                </div>
+
+                <div class="strength-card">
+                    <div class="strength-icon">
+                        <img src="images/st-3.png" alt="Community">
+                    </div>
+                    <h3>Community First</h3>
+                    <p>Empowering rural growers and supporting local economy.</p>
+                </div>
+
+                <div class="strength-card">
+                    <div class="strength-icon">
+                        <img src="images/st-4.png" alt="Products">
+                    </div>
+                    <h3>Curated Organic</h3>
+                    <p>A handpicked selection of 500+ premium organic goods.</p>
+                </div>
+
+                <div class="strength-card">
+                    <div class="strength-icon">
+                        <img src="images/st-5.png" alt="Quality">
+                    </div>
+                    <h3>Gold Standard</h3>
+                    <p>Triple-certified quality checks for maximum nutrient density.</p>
+                </div>
+
+                <div class="strength-card">
+                    <div class="strength-icon">
+                        <img src="images/st-6.png" alt="Grains">
+                    </div>
+                    <h3>Ancient Harvest</h3>
+                    <p>Preserving heritage grains with modern safety standards.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products-section" id="products">
+        <div class="section-container">
+            <h2 class="section-title">Most Loved Products</h2>
+
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-chili.webp" alt="Organic Honey">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Red Chilli</h3>
+                        <p class="product-price">₹120.50</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-rise.webp" alt="Almond Butter">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Rice</h3>
+                        <p class="product-price">₹150.00</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-wheet.webp" alt="Quinoa">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Wheat</h3>
+                        <p class="product-price">₹80.90</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-turmeric.webp" alt="Olive Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Turmeric</h3>
+                        <p class="product-price">₹220.00</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-container">
+                <button class="download-btn btn">See All Products
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="category-box-section" style="background-color: #f9f9f9;">
+        <div class="section-container">
+            <h2 class="section-title">Shop by Category</h2>
+
+            <div class="category-box-grid">
+                <!-- Box 1 -->
+                <div class="category-card">
+                    <img src="images/p-daal.webp" alt="Organic Daals" class="card-bg">
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3>Organic Daals</h3>
+                            <p>Protein-rich farm fresh pulses</p>
+                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="category-card">
+                    <img src="images/p-rise.webp" alt="Red Rice & Wheat" class="card-bg">
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3>Grains & Flours</h3>
+                            <p>Traditional Red Rice & Whole Wheat</p>
+                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="category-card">
+                    <img src="images/p-chili.webp" alt="Organic Masala" class="card-bg">
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3>Handground Spices</h3>
+                            <p>Turmeric, Chilli & Black Pepper</p>
+                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="category-card">
+                    <img src="images/p-ghee.webp" alt="Desi Ghee" class="card-bg">
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3>Pure Desi Ghee</h3>
+                            <p>Traditional Bilona Method Ghee</p>
+                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 5 -->
+                <div class="category-card">
+                    <img src="images/p-tea.webp" alt="Assam Tea" class="card-bg">
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3>Assam Tea</h3>
+                            <p>Premium Single-Origin Leaves</p>
+                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 6 -->
+                <div class="category-card">
+                    <img src="images/p-oil.webp" alt="Cold Pressed Oils" class="card-bg">
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h3>Cold Pressed Oils</h3>
+                            <p>Pure Mustard & Olive Oils</p>
+                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products-section">
+        <div class="section-container">
+            <h2 class="section-title">Organic Masala</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-chili.webp" alt="Organic Honey">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Red Chilli</h3>
+                        <p class="product-price">₹120.50</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-turmeric.webp" alt="Olive Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Turmeric</h3>
+                        <p class="product-price">₹220.00</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-chili.webp" alt="Organic Honey">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Red Chilli</h3>
+                        <p class="product-price">₹120.50</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-turmeric.webp" alt="Olive Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Turmeric</h3>
+                        <p class="product-price">₹220.00</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-all-container">
+                <button class="download-btn btn">See All Products
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="products-section" style="background-color: #f9f9f9;">
+        <div class="section-container">
+            <h2 class="section-title">Organic Daal</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-daal.webp" alt="Organic Honey">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Daal 1</h3>
+                        <p class="product-price">₹120.50</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-daal.webp" alt="Olive Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Daal 2</h3>
+                        <p class="product-price">₹220.00</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-daal.webp" alt="Organic Honey">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Daal 3</h3>
+                        <p class="product-price">₹120.50</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="images/p-daal.webp" alt="Olive Oil">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Daal 4</h3>
+                        <p class="product-price">₹120.50</p>
+                        <button class="add-to-cart">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-all-container">
+                <button class="download-btn btn">See All Products
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="blog-section">
+        <div class="section-container">
+            <!-- <h2 class="section-title">The Organic Journal</h2> -->
+            <div class="header-content">
+                <h2>The Organic Journal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam voluptatibus quisquam.</p>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-img-container">
+                        <img src="images/blog-1.webp" alt="Benefits of Ghee">
+                        <span class="blog-category">Wellness</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date">May 10, 2026</p>
+                        <h3>The Golden Elixir: Why Desi Ghee belongs in your kitchen</h3>
+                        <p>Discover the ancient Ayurvedic benefits of traditional Bilona ghee and how it boosts
+                            immunity...</p>
+                        <a href="#" class="read-more">Read Story <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-img-container">
+                        <img src="images/blog-2.webp" alt="Spices">
+                        <span class="blog-category">Nutrition</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date">May 05, 2026</p>
+                        <h3>Healing Spices: More than just flavor for your food</h3>
+                        <p>From anti-inflammatory turmeric to metabolic-boosting black pepper, learn the science of
+                            spices...</p>
+                        <a href="#" class="read-more">Read Story <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-img-container">
+                        <img src="images/blog-3.webp" alt="Organic Farming">
+                        <span class="blog-category">Farming</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date">April 28, 2026</p>
+                        <h3>From Soil to Soul: Our commitment to direct farming</h3>
+                        <p>A deep dive into our ethical sourcing process and how we support our local farming
+                            community...</p>
+                        <a href="#" class="read-more">Read Story <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="view-all-container">
+                <button class="download-btn btn">Explore All Stories
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial-section">
+        <div class="section-container">
+            <!-- <h2 class="section-title">Verified Purchase Stories</h2> -->
+            <div class="header-content">
+                <h2>Verified Purchase Stories</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam voluptatibus quisquam.</p>
+            </div>
+
+            <div class="testimonial-slider">
+                <!-- Navigation Controls (Now outside the hidden area) -->
+                <button class="slide-btn prev" onclick="moveSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+                <button class="slide-btn next" onclick="moveSlide(1)"><i class="bi bi-chevron-right"></i></button>
+
+                <!-- New Viewport Wrapper -->
+                <div class="testimonial-viewport">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="images/p-chili.webp" alt="Pure Desi Ghee">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Best Quality Ghee</h3>
+                                <p>"The aroma takes me back to my village. Truly authentic and pure."</p>
+                                <span class="customer-name">- Amit R.</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="images/p-daal.webp" alt="Organic Honey">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                </div>
+                                <h3>Pure Wildflower Honey</h3>
+                                <p>"You can taste the difference compared to supermarket brands. Very impressed!"</p>
+                                <span class="customer-name">- Sarah L.</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="images/p-rise.webp" alt="Red Rice">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Nutritious Red Rice</h3>
+                                <p>"The texture is perfect. My family has switched to this for all our meals."</p>
+                                <span class="customer-name">- Vijay K.</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="images/p-ginger.webp" alt="Pure Desi Ghee">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Best Quality Ghee</h3>
+                                <p>"The aroma takes me back to my village. Truly authentic and pure."</p>
+                                <span class="customer-name">- Amit R.</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="images/p-wheet.webp" alt="Organic Honey">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                </div>
+                                <h3>Pure Wildflower Honey</h3>
+                                <p>"You can taste the difference compared to supermarket brands. Very impressed!"</p>
+                                <span class="customer-name">- Sarah L.</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="images/p-turmeric.webp" alt="Red Rice">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Nutritious Red Rice</h3>
+                                <p>"The texture is perfect. My family has switched to this for all our meals."</p>
+                                <span class="customer-name">- Vijay K.</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="faq-section">
+        <div class="section-container">
+            <!-- <h2 class="section-title">Common Inquiries</h2> -->
+            <div class="header-content">
+                <h2>Common Inquiries</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam voluptatibus quisquam.</p>
+            </div>
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What makes your Desi Ghee different from store-bought brands?
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our Desi Ghee is prepared using the traditional Bilona method, where curd is churned to
+                            extract butter. This ensures the Ghee retains its natural aroma, nutrients, and medicinal
+                            properties without any additives.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are your Cold Pressed Oils truly chemical-free?
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, our Sarso (Mustard) and Olive oils are extracted at room temperature without the use of
+                            heat or chemicals, preserving the natural fatty acids and flavors.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do you verify the "Organic" status of your pulses and grains?
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We work directly with certified organic farms. Every batch of our Organic Daals, Red Rice,
+                            and Wheat undergoes strict quality checks to ensure no synthetic pesticides were used during
+                            cultivation.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does shipping take for fresh products?
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Typically, orders are processed within 24 hours. Depending on your location, you can expect
+                            your fresh organic harvest at your doorstep within 3 to 5 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
 
+    <footer class="main-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <!-- Column 1: Company Identity -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/organic-logo.png" alt="PurnOrganic Logo">
+                    </a>
+                    <p class="brand-tagline">100% Organic Commitment. Empowering our local farming community through a
+                        farmer-first marketplace.</p>
+                    <div class="company-details">
+                        <p><strong>CIN:</strong> U12345RJ2026PTC123456</p>
+                        <p><strong>GST:</strong> 08AAAAA0000A1Z5</p>
+                        <p><strong>Address:</strong> Shakti Khand-2, Indirapuram, Ghaziabad- 201014</p>
+                        <p><strong>Email:</strong> support@purnorganic.com</p>
+                    </div>
+                </div>
 
+                <!-- Column 2: Company & Support -->
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                    <h3 class="mt-20">Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Center / FAQs</a></li>
+                        <li><a href="#">Grievance Officer</a></li>
+                    </ul>
+                </div>
 
+                <!-- Column 3: Platform -->
+                <div class="footer-col">
+                    <h3>Platform</h3>
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">For Farmers / Sellers</a></li>
+                        <li><a href="#">For Educators / Mentors</a></li>
+                        <li><a href="#">Pricing / Membership</a></li>
+                    </ul>
+                </div>
 
+                <!-- Column 4: Legal -->
+                <div class="footer-col">
+                    <h3>Legal & Compliance</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="#">Refund & Cancellation Policy</a></li>
+                        <li><a href="#">Seller Agreement</a></li>
+                        <li><a href="#">Supplier Onboarding Agreement</a></li>
+                        <li><a href="#">B2B Wholesale Terms</a></li>
+                        <li><a href="#">Payment Terms</a></li>
+                    </ul>
+                </div>
+            </div>
 
+            <hr class="footer-divider">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2026 PurnOrganic. All rights reserved.
+                </div>
+                <div class="trust-badges">
+                    <span><i class="bi bi-shield-check"></i> Payments Secured</span>
+                    <span><i class="bi bi-patch-check"></i> Farmer-first Marketplace</span>
+                </div>
+            </div> 
+        </div>
+    </footer>
 
 
 
@@ -326,6 +969,15 @@
         setInterval(slideNext, 5000);
     </script>
 
+    <!-- for shop now btn scrool to product -->
+    <script>
+        function scrollToProducts() {
+            document.getElementById("products").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+
     <!-- fixed button on screen -->
     <script>
         function callPhone() {
@@ -368,3 +1020,64 @@
 
         });
     </script>
+
+    <!-- testimonial section -->
+    <script>
+        let slideIndex = 0;
+        const totalTestimonials = 6; // Total cards you have
+
+        function moveSlide(step) {
+            const track = document.getElementById('testimonialTrack');
+            const containerWidth = document.querySelector('.testimonial-slider').offsetWidth;
+
+            // Determine how many cards are visible
+            let visibleCards = 3;
+            if (window.innerWidth <= 1100) visibleCards = 2;
+            if (window.innerWidth <= 768) visibleCards = 1;
+
+            const maxIndex = totalTestimonials - visibleCards;
+            slideIndex += step;
+
+            if (slideIndex > maxIndex) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = maxIndex;
+
+            const percentage = slideIndex * (100 / visibleCards);
+            track.style.transform = `translateX(-${percentage}%)`;
+        }
+
+        // Auto Play
+        let testimonialTimer = setInterval(() => moveSlide(1), 5000);
+
+        // Pause on hover
+        document.querySelector('.testimonial-slider').addEventListener('mouseenter', () => {
+            clearInterval(testimonialTimer);
+        });
+
+        document.querySelector('.testimonial-slider').addEventListener('mouseleave', () => {
+            testimonialTimer = setInterval(() => moveSlide(1), 5000);
+        });
+    </script>
+
+    <!-- FAQ Section -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+
+                // Close other open items (Optional: remove this if you want multiple open)
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                // Toggle the clicked item
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
