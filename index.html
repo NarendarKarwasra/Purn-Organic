@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purn Organic - Your Digitally Owned Community Farm.</title>
+    <link rel="icon" type="image/png" href="images/purn-favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- fixed buttons on screen -->
+    <div class="fixed-on-screen">
+        <!-- Call Button -->
+        <div class="button-container call-container" onclick="callPhone()">
+            <i class="bi bi-telephone-fill icon"></i>
+            <span class="label call-label">Call Us</span>
+        </div>
+
+        <!-- Download App Button -->
+        <div class="button-container app-container" onclick="downloadApp()">
+            <i class="bi bi-cloud-arrow-down-fill"></i>
+            <span class="label app-label">Download App</span>
+        </div>
+
+        <!-- Whatsapp Button -->
+        <div class="button-container whatsapp-container" onclick="sendWhatsapp()">
+            <i class="bi bi-whatsapp icon"></i>
+            <span class="label whatsapp-label">Whatsapp Us</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="section-container">
+            <div class="header-container">
+                <div class="header-top-bar">
+                    <a href="index.html" class="logo">
+                        <img src="images/organic-logo.png" alt="Logo">
+                    </a>
+
+                    <div class="header-top-bar-right">
+                        <div class="header-search-bar desktop-only">
+                            <i class="bi bi-search"></i>
+                            <input type="text" class="search-input" placeholder="Search here for products...">
+                        </div>
+
+                        <button class="login-btn desktop-only">Login / Sign Up</button>
+
+                        <div class="header-cart">
+                            <i class="bi bi-cart4"></i>
+                        </div>
+
+                        <div class="hamburger-menu" id="hamburger">
+                            <i class="bi bi-list"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom-bar desktop-only">
+                    <nav class="navmenu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Opportunities</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Mobile Sidebar Menu -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="mobile-search-bar">
+                        <input type="text" placeholder="Search products...">
+                    </div>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Opportunities</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-actions">
+                        <button class="login-btn">Login / Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-carousel">
+        <div class="carousel-track">
+            <div class="hero-slide" style="background-image: url('/images/hero-1.webp');">
+                <div class="section-container">
+                    <div class="hero-content">
+                        <h1>Pure Grains for a <br>Healthier Everyday Life</h1>
+                        <p>From naturally grown rice to stone-ground flours, bring home wholesome nutrition, authentic
+                            taste, and the goodness of chemical-free farming.
+                        </p>
+                        <div class="hero-tags">
+                            <span class="hero-tag">Organic</span>
+                            •
+                            <span class="hero-tag">Natural</span>
+                            •
+                            <span class="hero-tag">Healthy</span>
+                        </div>
+                        <div class="hero-btn-container">
+                            <button class="shop-btn btn">Shop Now
+                                <i class="bi bi-cart4"></i>
+                            </button>
+                            <button class="download-btn btn">Download App
+                                <i class="bi bi-cloud-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('/images/hero-2.webp');">
+                <div class="section-container">
+                    <div class="hero-content">
+                        <h1>Tradition in Every <br>Spoon of Desi Ghee</h1>
+                        <p>Crafted from pure organic butter using traditional methods, our desi ghee delivers rich
+                            aroma, authentic flavor, and natural nourishment for every meal.
+                        </p>
+                        <div class="hero-tags">
+                            <span class="hero-tag">Organic</span>
+                            •
+                            <span class="hero-tag">Natural</span>
+                            •
+                            <span class="hero-tag">Healthy</span>
+                        </div>
+                        <div class="hero-btn-container">
+                            <button class="shop-btn btn">Shop Now
+                                <i class="bi bi-cart4"></i>
+                            </button>
+                            <button class="download-btn btn">Download App
+                                <i class="bi bi-cloud-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('/images/hero-3.webp');">
+                <div class="section-container">
+                    <div class="hero-content">
+                        <h1>Spices Filled with <br>Purity, Aroma & Tradition</h1>
+                        <p>From turmeric and red chilli to black pepper and ginger, discover authentic organic spices
+                            that add rich flavor and natural goodness to every recipe.
+                        </p>
+                        <div class="hero-tags">
+                            <span class="hero-tag">Organic</span>
+                            •
+                            <span class="hero-tag">Natural</span>
+                            •
+                            <span class="hero-tag">Healthy</span>
+                        </div>
+                        <div class="hero-btn-container">
+                            <button class="shop-btn btn">Shop Now
+                                <i class="bi bi-cart4"></i>
+                            </button>
+                            <button class="download-btn btn">Download App
+                                <i class="bi bi-cloud-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('/images/hero-4.webp');">
+                <div class="section-container">
+                    <div class="hero-content">
+                        <h1>Fresh Assam Tea with <br>Every Refreshing Sip</h1>
+                        <p>Experience the bold aroma and rich taste of premium Assam tea leaves sourced naturally for a
+                            refreshing and energizing tea experience.
+                        </p>
+                        <div class="hero-tags">
+                            <span class="hero-tag">Organic</span>
+                            •
+                            <span class="hero-tag">Natural</span>
+                            •
+                            <span class="hero-tag">Healthy</span>
+                        </div>
+                        <div class="hero-btn-container">
+                            <button class="shop-btn btn">Shop Now
+                                <i class="bi bi-cart4"></i>
+                            </button>
+                            <button class="download-btn btn">Download App
+                                <i class="bi bi-cloud-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('/images/hero-5.webp');">
+                <div class="section-container">
+                    <div class="hero-content">
+                        <h1>Protein-Rich Organic <br>Daal for Every Kitchen</h1>
+                        <p>Naturally cultivated and carefully processed dals packed with purity, nutrition, and homemade
+                            goodness for healthy family meals every day.
+                        </p>
+                        <div class="hero-tags">
+                            <span class="hero-tag">Organic</span>
+                            •
+                            <span class="hero-tag">Natural</span>
+                            •
+                            <span class="hero-tag">Healthy</span>
+                        </div>
+                        <div class="hero-btn-container">
+                            <button class="shop-btn btn">Shop Now
+                                <i class="bi bi-cart4"></i>
+                            </button>
+                            <button class="download-btn btn">Download App
+                                <i class="bi bi-cloud-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script for navbar -->
+    <script>
+        const mobileBtn = document.querySelector('.hamburger-menu');
+        const navMenu = document.getElementById('mobileMenu');
+        const navLinks = document.querySelectorAll('.mobile-nav a, .navmenu a');
+
+        // Active Link Logic
+        const currentUrl = window.location.href;
+
+        navLinks.forEach(link => {
+            if (link.href === currentUrl) {
+                link.classList.add('active');
+            }
+        });
+
+        // Mobile Toggle Logic
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+                closeMenu();
+            }
+        });
+
+        function closeMenu() {
+            navMenu.classList.remove('active');
+            const icon = mobileBtn.querySelector('i');
+            if (icon) icon.classList.replace('bi-x-lg', 'bi-list');
+        }
+    </script>
+
+    <!-- for hero carousels -->
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.hero-slide');
+        let currentIndex = 0;
+
+        function slideNext() {
+            currentIndex++;
+            // If we reach the end, go back to the first hero-slide
+            if (currentIndex >= slides.length) {
+                currentIndex = 0;
+            }
+            // Move the track: 0%, -100%, -200%, -300%
+            const moveAmount = currentIndex * -100;
+            track.style.transform = `translateX(${moveAmount}%)`;
+        }
+        // Auto-slide every 5 seconds
+        setInterval(slideNext, 5000);
+    </script>
+
+    <!-- fixed button on screen -->
+    <script>
+        function callPhone() {
+            const phoneNumber = "";
+            window.open(`tel:${phoneNumber}`, "_self");
+        }
+        function downloadApp() {
+        }
+        function sendWhatsapp() {
+            const phoneNumber = "";
+            const message = "Hello! I would like to inquire about your products.";
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
+    </script>
+
+    <!-- script for slide up animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Create the "Eye" (Observer)
+            const slideUpObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // If the element enters the screen
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+
+                        // Once it has slid up, stop watching it (until refresh)
+                        slideUpObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0, // Starts when 0% of the element is visible
+                rootMargin: "0px 0px -50px 0px" // Slight offset so it triggers before it hits the very bottom
+            });
+
+            // Find everything with the "slide-up" class and start watching it
+            const slideUpElements = document.querySelectorAll('.slide-up');
+            slideUpElements.forEach(el => slideUpObserver.observe(el));
+
+        });
+    </script>
