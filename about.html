@@ -54,11 +54,11 @@
                             <input type="text" class="search-input" placeholder="Search here for products...">
                         </div>
 
-                        <button class="login-btn desktop-only">Login / Sign Up</button>
+                        <button class="login-btn desktop-only" onclick="window.location.href='login.html'">Login / Sign Up</button>
 
-                        <div class="header-cart">
+                        <a href="cart.html" class="header-cart">
                             <i class="bi bi-cart4"></i>
-                        </div>
+                        </a>
 
                         <div class="hamburger-menu" id="hamburger">
                             <i class="bi bi-list"></i>
@@ -71,12 +71,23 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Opportunities</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li class="has-dropdown">
+                                <a href="products.html" class="menu-link">
+                                    Products <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="products.html#daal">Organic Daals</a></li>
+                                    <li><a href="products.html#grains">Grains & Flours</a></li>
+                                    <li><a href="products.html#spices">Handground Spices</a></li>
+                                    <li><a href="products.html#ghee">Pure Desi Ghee</a></li>
+                                    <li><a href="products.html#tea">Assam Tea</a></li>
+                                    <li><a href="products.html#oils">Cold Pressed Oils</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="opportunity.html">Opportunity</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -89,17 +100,16 @@
                     <nav class="mobile-nav">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Opportunities</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="opportunity.html">Opportunity</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="mobile-actions">
-                        <button class="login-btn">Login / Sign Up</button>
+                        <button class="login-btn" onclick="window.location.href='login.html'">Login / Sign Up</button>
                     </div>
                 </div>
             </div>
@@ -288,15 +298,15 @@
                 <div class="footer-col">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="opportunities.html">Opportunities</a></li>
                     </ul>
                     <h3 class="mt-20">Support</h3>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Help Center / FAQs</a></li>
-                        <li><a href="#">Grievance Officer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
                     </ul>
                 </div>
 
@@ -315,13 +325,13 @@
                 <div class="footer-col">
                     <h3>Legal & Compliance</h3>
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Refund & Cancellation Policy</a></li>
-                        <li><a href="#">Seller Agreement</a></li>
-                        <li><a href="#">Supplier Onboarding Agreement</a></li>
-                        <li><a href="#">B2B Wholesale Terms</a></li>
-                        <li><a href="#">Payment Terms</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="refund.html">Refund & Cancellation Policy</a></li>
+                        <li><a href="seller-agreement.html">Seller Agreement</a></li>
+                        <li><a href="supplier-policy.html">Supplier Onboarding Agreement</a></li>
+                        <li><a href="b2b-terms.html">B2B Wholesale Terms</a></li>
+                        <li><a href="data-protection.html">Data Protection Policy</a></li>
                     </ul>
                 </div>
             </div>

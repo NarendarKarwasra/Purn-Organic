@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purn Organic - FAQ</title>
+    <link rel="icon" type="image/png" href="images/purn-favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- fixed buttons on screen -->
+    <div class="fixed-on-screen">
+        <!-- Call Button -->
+        <div class="button-container call-container" onclick="callPhone()">
+            <i class="bi bi-telephone-fill icon"></i>
+            <span class="label call-label">Call Us</span>
+        </div>
+
+        <!-- Download App Button -->
+        <div class="button-container app-container" onclick="downloadApp()">
+            <i class="bi bi-cloud-arrow-down-fill icon"></i>
+            <span class="label app-label">Download App</span>
+        </div>
+
+        <!-- Whatsapp Button -->
+        <div class="button-container whatsapp-container" onclick="sendWhatsapp()">
+            <i class="bi bi-whatsapp icon"></i>
+            <span class="label whatsapp-label">Whatsapp Us</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="section-container">
+            <div class="header-container">
+                <div class="header-top-bar">
+                    <a href="index.html" class="logo">
+                        <img src="images/organic-logo.png" alt="Logo">
+                    </a>
+
+                    <div class="header-top-bar-right">
+                        <div class="header-search-bar desktop-only">
+                            <i class="bi bi-search"></i>
+                            <input type="text" class="search-input" placeholder="Search here for products...">
+                        </div>
+
+                        <button class="login-btn desktop-only" onclick="window.location.href='login.html'">Login / Sign Up</button>
+
+                        <a href="cart.html" class="header-cart">
+                            <i class="bi bi-cart4"></i>
+                        </a>
+
+                        <div class="hamburger-menu" id="hamburger">
+                            <i class="bi bi-list"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom-bar desktop-only">
+                    <nav class="navmenu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="has-dropdown">
+                                <a href="products.html" class="menu-link">
+                                    Products <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="products.html#daal">Organic Daals</a></li>
+                                    <li><a href="products.html#grains">Grains & Flours</a></li>
+                                    <li><a href="products.html#spices">Handground Spices</a></li>
+                                    <li><a href="products.html#ghee">Pure Desi Ghee</a></li>
+                                    <li><a href="products.html#tea">Assam Tea</a></li>
+                                    <li><a href="products.html#oils">Cold Pressed Oils</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="opportunity.html">Opportunity</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Mobile Sidebar Menu -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="mobile-search-bar">
+                        <input type="text" placeholder="Search products...">
+                    </div>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="opportunity.html">Opportunity</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-actions">
+                        <button class="login-btn" onclick="window.location.href='login.html'">Login / Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="faq-page">
+        <div class="faq-hero">
+            <div class="section-container">
+                <h1>How can we help?</h1>
+                <p>Select a category below to find the answers you need.</p>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="faq-layout">
+
+                <aside class="faq-categories">
+                    <h3>Categories</h3>
+                    <ul id="faqCategories">
+                        <li class="cat-link active" data-target="products">
+                            <i class="bi bi-leaf"></i> Product Quality
+                        </li>
+                        <li class="cat-link" data-target="orders">
+                            <i class="bi bi-truck"></i> Orders & Shipping
+                        </li>
+                        <li class="cat-link" data-target="farming">
+                            <i class="bi bi-cpu"></i> Our Technology
+                        </li>
+                        <li class="cat-link" data-target="account">
+                            <i class="bi bi-person-check"></i> Account & Payments
+                        </li>
+                    </ul>
+                </aside>
+
+                <div class="faq-main-content">
+
+                    <section id="products" class="faq-category-block">
+                        <h2>Product Quality</h2>
+                        <div class="faq-page-container">
+                            <div class="faq-item">
+                                <button class="faq-question">What makes your Desi Ghee different? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Our Ghee is made using the Bilona method (churning curd), ensuring 100% purity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What makes your Desi Ghee different? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Our Ghee is made using the Bilona method (churning curd), ensuring 100% purity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What makes your Desi Ghee different? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Our Ghee is made using the Bilona method (churning curd), ensuring 100% purity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What makes your Desi Ghee different? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Our Ghee is made using the Bilona method (churning curd), ensuring 100% purity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What makes your Desi Ghee different? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Our Ghee is made using the Bilona method (churning curd), ensuring 100% purity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What makes your Desi Ghee different? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Our Ghee is made using the Bilona method (churning curd), ensuring 100% purity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What makes your Desi Ghee different? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Our Ghee is made using the Bilona method (churning curd), ensuring 100% purity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What makes your Desi Ghee different? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Our Ghee is made using the Bilona method (churning curd), ensuring 100% purity.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="orders" class="faq-category-block" style="display: none;">
+                        <h2>Orders & Shipping</h2>
+                        <div class="faq-page-container">
+                            <div class="faq-item">
+                                <button class="faq-question">How long does shipping take? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Standard shipping takes 3-5 business days across India.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">How long does shipping take? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Standard shipping takes 3-5 business days across India.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">How long does shipping take? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Standard shipping takes 3-5 business days across India.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">How long does shipping take? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Standard shipping takes 3-5 business days across India.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">How long does shipping take? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Standard shipping takes 3-5 business days across India.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">How long does shipping take? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Standard shipping takes 3-5 business days across India.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">How long does shipping take? <i
+                                        class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Standard shipping takes 3-5 business days across India.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="farming" class="faq-category-block" style="display: none;">
+                        <h2>Our Technology (CFaaS)</h2>
+                        <div class="faq-page-container">
+                            <div class="faq-item">
+                                <button class="faq-question">What is CFaaS? <i class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Community Farming as a Service uses AI and Blockchain for 100% traceability.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What is CFaaS? <i class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Community Farming as a Service uses AI and Blockchain for 100% traceability.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What is CFaaS? <i class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Community Farming as a Service uses AI and Blockchain for 100% traceability.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What is CFaaS? <i class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Community Farming as a Service uses AI and Blockchain for 100% traceability.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What is CFaaS? <i class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Community Farming as a Service uses AI and Blockchain for 100% traceability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="account" class="faq-category-block" style="display: none;">
+                        <h2>Our Technology (CFaaS)</h2>
+                        <div class="faq-page-container">
+                            <div class="faq-item">
+                                <button class="faq-question">What is CFaaS? <i class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Community Farming as a Service uses AI and Blockchain for 100% traceability.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">What is CFaaS? <i class="bi bi-plus-lg"></i></button>
+                                <div class="faq-answer">
+                                    <p>Community Farming as a Service uses AI and Blockchain for 100% traceability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <!-- Column 1: Company Identity -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/organic-logo.png" alt="PurnOrganic Logo">
+                    </a>
+                    <p class="brand-tagline">100% Organic Commitment. Empowering our local farming community through a
+                        farmer-first marketplace.</p>
+                    <div class="company-details">
+                        <p><strong>CIN:</strong> U12345RJ2026PTC123456</p>
+                        <p><strong>GST:</strong> 08AAAAA0000A1Z5</p>
+                        <p><strong>Address:</strong> Shakti Khand-2, Indirapuram, Ghaziabad- 201014</p>
+                        <p><strong>Email:</strong> support@purnorganic.com</p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Company & Support -->
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="opportunities.html">Opportunities</a></li>
+                    </ul>
+                    <h3 class="mt-20">Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Platform -->
+                <div class="footer-col">
+                    <h3>Platform</h3>
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">For Farmers / Sellers</a></li>
+                        <li><a href="#">For Educators / Mentors</a></li>
+                        <li><a href="#">Pricing / Membership</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Legal -->
+                <div class="footer-col">
+                    <h3>Legal & Compliance</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="refund.html">Refund & Cancellation Policy</a></li>
+                        <li><a href="seller-agreement.html">Seller Agreement</a></li>
+                        <li><a href="supplier-policy.html">Supplier Onboarding Agreement</a></li>
+                        <li><a href="b2b-terms.html">B2B Wholesale Terms</a></li>
+                        <li><a href="data-protection.html">Data Protection Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2026 PurnOrganic. All rights reserved.
+                </div>
+                <div class="trust-badges">
+                    <span><i class="bi bi-shield-check"></i> Payments Secured</span>
+                    <span><i class="bi bi-patch-check"></i> Farmer-first Marketplace</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- script for navbar -->
+    <script>
+        const mobileBtn = document.querySelector('.hamburger-menu');
+        const navMenu = document.getElementById('mobileMenu');
+        const navLinks = document.querySelectorAll('.mobile-nav a, .navmenu a');
+
+        // Active Link Logic
+        const currentUrl = window.location.href;
+
+        navLinks.forEach(link => {
+            if (link.href === currentUrl) {
+                link.classList.add('active');
+            }
+        });
+
+        // Mobile Toggle Logic
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !mobileBtn.contains(e.target)) {
+                closeMenu();
+            }
+        });
+
+        function closeMenu() {
+            navMenu.classList.remove('active');
+            const icon = mobileBtn.querySelector('i');
+            if (icon) icon.classList.replace('bi-x-lg', 'bi-list');
+        }
+    </script>
+
+    <!-- for shop now btn scrool to product -->
+    <script>
+        function scrollToProducts() {
+            document.getElementById("products").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <!-- fixed button on screen -->
+    <script>
+        function callPhone() {
+            const phoneNumber = "";
+            window.open(`tel:${phoneNumber}`, "_self");
+        }
+        function downloadApp() {
+        }
+        function sendWhatsapp() {
+            const phoneNumber = "";
+            const message = "Hello! I would like to inquire about your products.";
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
+    </script>
+
+    <!-- script for slide up animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Create the "Eye" (Observer)
+            const slideUpObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // If the element enters the screen
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+
+                        // Once it has slid up, stop watching it (until refresh)
+                        slideUpObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0, // Starts when 0% of the element is visible
+                rootMargin: "0px 0px -50px 0px" // Slight offset so it triggers before it hits the very bottom
+            });
+
+            // Find everything with the "slide-up" class and start watching it
+            const slideUpElements = document.querySelectorAll('.slide-up');
+            slideUpElements.forEach(el => slideUpObserver.observe(el));
+
+        });
+    </script>
+
+    <!-- faq -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const catLinks = document.querySelectorAll('.cat-link');
+            const sections = document.querySelectorAll('.faq-category-block');
+
+            catLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    const targetId = link.getAttribute('data-target');
+
+                    // 1. Remove active class from all links
+                    catLinks.forEach(l => l.classList.remove('active'));
+
+                    // 2. Add active class to clicked link
+                    link.classList.add('active');
+
+                    // 3. Hide all FAQ sections
+                    sections.forEach(section => {
+                        section.style.display = 'none';
+                    });
+
+                    // 4. Show the target section
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.style.display = 'block';
+                    }
+                });
+            });
+
+            // Reuse existing FAQ Accordion toggle logic
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const item = button.parentElement;
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

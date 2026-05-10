@@ -54,11 +54,11 @@
                             <input type="text" class="search-input" placeholder="Search here for products...">
                         </div>
 
-                        <button class="login-btn desktop-only">Login / Sign Up</button>
+                        <button class="login-btn desktop-only" onclick="window.location.href='login.html'">Login / Sign Up</button>
 
-                        <div class="header-cart">
+                        <a href="cart.html" class="header-cart">
                             <i class="bi bi-cart4"></i>
-                        </div>
+                        </a>
 
                         <div class="hamburger-menu" id="hamburger">
                             <i class="bi bi-list"></i>
@@ -71,12 +71,23 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Opportunities</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li class="has-dropdown">
+                                <a href="products.html" class="menu-link">
+                                    Products <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="products.html#daal">Organic Daals</a></li>
+                                    <li><a href="products.html#grains">Grains & Flours</a></li>
+                                    <li><a href="products.html#spices">Handground Spices</a></li>
+                                    <li><a href="products.html#ghee">Pure Desi Ghee</a></li>
+                                    <li><a href="products.html#tea">Assam Tea</a></li>
+                                    <li><a href="products.html#oils">Cold Pressed Oils</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="opportunity.html">Opportunity</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -89,17 +100,16 @@
                     <nav class="mobile-nav">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Opportunities</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="opportunity.html">Opportunity</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="mobile-actions">
-                        <button class="login-btn">Login / Sign Up</button>
+                        <button class="login-btn" onclick="window.location.href='login.html'">Login / Sign Up</button>
                     </div>
                 </div>
             </div>
@@ -346,7 +356,8 @@
             </div>
 
             <div class="view-all-container">
-                <button class="download-btn btn">See All Products
+                <button class="download-btn btn" onclick="window.location.href='products.html'">
+                    See All Products
                     <i class="bi bi-arrow-right-circle-fill"></i>
                 </button>
             </div>
@@ -367,7 +378,8 @@
                         <div class="card-content">
                             <h3>Organic Daals</h3>
                             <p>Protein-rich farm fresh pulses</p>
-                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                            <a href="products.html#daal" class="shop-now-link">Explore Collection <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -379,7 +391,8 @@
                         <div class="card-content">
                             <h3>Grains & Flours</h3>
                             <p>Traditional Red Rice & Whole Wheat</p>
-                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                            <a href="products.html#grains" class="shop-now-link">Explore Collection <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -391,7 +404,8 @@
                         <div class="card-content">
                             <h3>Handground Spices</h3>
                             <p>Turmeric, Chilli & Black Pepper</p>
-                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                            <a href="products.html#spices" class="shop-now-link">Explore Collection <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -403,7 +417,8 @@
                         <div class="card-content">
                             <h3>Pure Desi Ghee</h3>
                             <p>Traditional Bilona Method Ghee</p>
-                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                            <a href="products.html#ghee" class="shop-now-link">Explore Collection <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -415,7 +430,8 @@
                         <div class="card-content">
                             <h3>Assam Tea</h3>
                             <p>Premium Single-Origin Leaves</p>
-                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                            <a href="products.html#tea" class="shop-now-link">Explore Collection <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -427,7 +443,8 @@
                         <div class="card-content">
                             <h3>Cold Pressed Oils</h3>
                             <p>Pure Mustard & Olive Oils</p>
-                            <a href="#" class="shop-now-link">Explore Collection <i class="bi bi-arrow-right"></i></a>
+                            <a href="products.html#oils" class="shop-now-link">Explore Collection <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -497,7 +514,7 @@
             </div>
 
             <div class="view-all-container">
-                <button class="download-btn btn">See All Products
+                <button class="download-btn btn" onclick="window.location.href='products.html'">See All Products
                     <i class="bi bi-arrow-right-circle-fill"></i>
                 </button>
             </div>
@@ -567,7 +584,7 @@
             </div>
 
             <div class="view-all-container">
-                <button class="download-btn btn">See All Products
+                <button class="download-btn btn" onclick="window.location.href='products.html'">See All Products
                     <i class="bi bi-arrow-right-circle-fill"></i>
                 </button>
             </div>
@@ -596,7 +613,7 @@
                         <h3>The Golden Elixir: Why Desi Ghee belongs in your kitchen</h3>
                         <p>Discover the ancient Ayurvedic benefits of traditional Bilona ghee and how it boosts
                             immunity...</p>
-                        <a href="#" class="read-more">Read Story <i class="bi bi-chevron-right"></i></a>
+                        <a href="blog-detail.html" class="read-more">Read Story <i class="bi bi-chevron-right"></i></a>
                     </div>
                 </article>
 
@@ -611,7 +628,7 @@
                         <h3>Healing Spices: More than just flavor for your food</h3>
                         <p>From anti-inflammatory turmeric to metabolic-boosting black pepper, learn the science of
                             spices...</p>
-                        <a href="#" class="read-more">Read Story <i class="bi bi-chevron-right"></i></a>
+                        <a href="blog-detail.html" class="read-more">Read Story <i class="bi bi-chevron-right"></i></a>
                     </div>
                 </article>
 
@@ -626,13 +643,14 @@
                         <h3>From Soil to Soul: Our commitment to direct farming</h3>
                         <p>A deep dive into our ethical sourcing process and how we support our local farming
                             community...</p>
-                        <a href="#" class="read-more">Read Story <i class="bi bi-chevron-right"></i></a>
+                        <a href="blog-detail.html" class="read-more">Read Story <i class="bi bi-chevron-right"></i></a>
                     </div>
                 </article>
             </div>
 
             <div class="view-all-container">
-                <button class="download-btn btn">Explore All Stories
+                <button class="download-btn btn" onclick="window.location.href='blogs.html'">
+                    Explore All Stories
                 </button>
             </div>
         </div>
@@ -849,15 +867,15 @@
                 <div class="footer-col">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="opportunities.html">Opportunities</a></li>
                     </ul>
                     <h3 class="mt-20">Support</h3>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Help Center / FAQs</a></li>
-                        <li><a href="#">Grievance Officer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
                     </ul>
                 </div>
 
@@ -878,11 +896,11 @@
                     <ul>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="#">Refund & Cancellation Policy</a></li>
-                        <li><a href="#">Seller Agreement</a></li>
-                        <li><a href="#">Supplier Onboarding Agreement</a></li>
-                        <li><a href="#">B2B Wholesale Terms</a></li>
-                        <li><a href="#">Payment Terms</a></li>
+                        <li><a href="refund.html">Refund & Cancellation Policy</a></li>
+                        <li><a href="seller-agreement.html">Seller Agreement</a></li>
+                        <li><a href="supplier-policy.html">Supplier Onboarding Agreement</a></li>
+                        <li><a href="b2b-terms.html">B2B Wholesale Terms</a></li>
+                        <li><a href="data-protection.html">Data Protection Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -898,11 +916,9 @@
                     <span><i class="bi bi-shield-check"></i> Payments Secured</span>
                     <span><i class="bi bi-patch-check"></i> Farmer-first Marketplace</span>
                 </div>
-            </div> 
+            </div>
         </div>
     </footer>
-
-
 
 
     <!-- script for navbar -->
@@ -947,6 +963,18 @@
             const icon = mobileBtn.querySelector('i');
             if (icon) icon.classList.replace('bi-x-lg', 'bi-list');
         }
+
+        // Toggle Mobile Dropdown
+        const dropdownBtn = document.querySelector('.dropdown-icon');
+        const parentLi = document.querySelector('.has-dropdown');
+
+        if (dropdownBtn) {
+            dropdownBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                parentLi.classList.toggle('active');
+            });
+        }
+
     </script>
 
     <!-- for hero carousels -->
